@@ -2,7 +2,7 @@ import styles from './Button.module.scss'
 
 export default function SettingsButton(props) {
   return (
-    <button {...props} className={styles.withText}>
+    <button {...props} className={`${styles.button} ${styles.withText}`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

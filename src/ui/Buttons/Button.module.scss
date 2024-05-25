@@ -1,4 +1,4 @@
-button {
+.button {
 	margin: 0 auto;
 	cursor: pointer;
 	width: 60px;
@@ -10,7 +10,7 @@ button {
 	margin: 0 auto;
 }
 
-button.withText {
+.button.withText {
 	display: flex;
 	justify-content: center;
 	align-items: center;
