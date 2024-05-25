@@ -1,4 +1,4 @@
-import './PlayButton.module.scss'
+import styles from './Button.module.scss'
 
 export default function PlayButton(props) {
 	return (  

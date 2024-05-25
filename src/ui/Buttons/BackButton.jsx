@@ -1,4 +1,4 @@
-import styles from './BackButton.module.scss'
+import styles from './Button.module.scss'
 
 export default function BackButton(props) {
 	return (  

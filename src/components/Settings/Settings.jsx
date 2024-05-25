@@ -1,8 +1,9 @@
 import ReactSlider from 'react-slider'
-import styles from './Settings.module.scss'
 import SettingsContext from './SettingsContext'
 import { useContext } from 'react'
-import BackButton from '../../ui/BackButton/BackButton'
+import BackButton from '../../ui/Buttons/BackButton'
+
+import styles from './Settings.module.scss'
 
 export default function Settings() {
   const SettingsInfo = useContext(SettingsContext)
@@ -10,8 +11,8 @@ export default function Settings() {
     <div className={styles.settingsWrapper}>
       <p>Время работы: {SettingsInfo.workMinutes}:00</p>
       <ReactSlider
-        className={styles.sliderRed}
-        thumbClassName={styles.thumbRed}
+        className={`${styles.slider} ${styles.sliderRed}`}
+        thumbClassName={`${styles.thumb} ${styles.thumbRed}`}
         trackClassName={'track'}
         value={SettingsInfo.workMinutes}
         onChange={(newValue) => SettingsInfo.setWorkMinutes(newValue)}
@@ -20,8 +21,8 @@ export default function Settings() {
       />
       <p>Время отдыха: {SettingsInfo.breakMinutes}:00</p>
       <ReactSlider
-        className={styles.sliderGreen}
-        thumbClassName={styles.thumbGreen}
+        className={`${styles.slider} ${styles.sliderGreen}`}
+        thumbClassName={`${styles.thumb} ${styles.thumbGreen}`}
         trackClassName={'track'}
         value={SettingsInfo.breakMinutes}
         onChange={(newValue) => SettingsInfo.setBreakMinutes(newValue)}

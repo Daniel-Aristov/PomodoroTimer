@@ -1,4 +1,4 @@
-import './PauseButton.module.scss'
+import styles from './Button.module.scss'
 
 export default function PauseButton(props) {
 	return (  

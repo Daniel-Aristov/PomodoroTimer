@@ -1,9 +1,10 @@
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
-import PlayButton from '../../ui/PlayButton/PlayButton'
-import PauseButton from '../../ui/PauseButton/PauseButton'
-import SettingsButton from '../../ui/SettingsButton/SettingsButton'
 import { useContext, useEffect, useState, useRef } from 'react'
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
+import PlayButton from '../../ui/Buttons/PlayButton'
+import PauseButton from '../../ui/Buttons/PauseButton'
+import SettingsButton from '../../ui/Buttons/SettingsButton'
 import SettingsContext from '../Settings/SettingsContext'
+
 import './Timer.scss'
 
 const red = '#f54e4e'
