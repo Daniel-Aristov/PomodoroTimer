@@ -7,6 +7,7 @@ import styles from './Settings.module.scss'
 
 export default function Settings() {
   const SettingsInfo = useContext(SettingsContext)
+  
   return (
     <div className={styles.settingsWrapper}>
       <p>Время работы: {SettingsInfo.workMinutes}:00</p>
